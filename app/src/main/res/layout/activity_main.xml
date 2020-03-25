@@ -27,7 +27,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Podaj imie" />
+            android:text="Podaj Imie" />
 
     </LinearLayout>
 
@@ -50,7 +50,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Podaj nazwisko" />
+            android:text="Podaj Nazwisko" />
     </LinearLayout>
 
     <LinearLayout
@@ -72,7 +72,7 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="number"
-            android:text="Podaj liczbe ocen" />
+            android:text="Podaj Liczbe Ocen" />
     </LinearLayout>
 
     <Button
@@ -80,5 +80,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Dalej" />
+
+    <TextView
+        android:id="@+id/avgGrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
 
 </LinearLayout>

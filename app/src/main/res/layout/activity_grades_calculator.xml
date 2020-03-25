@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     tools:context=".GradesCalculator">
 
-    <TextView
-        android:id="@+id/welcome"
+    <LinearLayout
+        android:id="@+id/linearLayoutMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tu nowe aktivity podales liczbe ocen:" />
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/gradesNumberA2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tu bedzie liczba" />
-
-</LinearLayout>
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.9"
+            android:background="#9A71E4"
+            android:fontFamily="monospace"
+            android:text="@string/mess"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+</ScrollView>
