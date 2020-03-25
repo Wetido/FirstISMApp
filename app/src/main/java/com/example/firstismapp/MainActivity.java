@@ -51,9 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (!CheckUsername(userName) || !CheckUsername(userSurName) || !CheckGrades(userGrades)) {
                     Toast.makeText(MainActivity.this, "PODAJ PRAWIDŁOWE DANE", Toast.LENGTH_LONG).show();
-                }else if (Integer.parseInt( userGrades ) > 50){
+                }else if (Integer.parseInt( userGrades ) > 50 ) {
 
                     Toast.makeText(MainActivity.this, "MAKSYMALNA LICZBA OCEN - 50", Toast.LENGTH_LONG).show();
+                }else if (Integer.parseInt( userGrades ) == 0 ) {
+
+                    Toast.makeText(MainActivity.this, "PODAJ ILOSC OCEN", Toast.LENGTH_LONG).show();
                 }else{
                     Intent i = new Intent(getApplicationContext(), GradesCalculator.class);
                     i.putExtra("grades", userGrades );
