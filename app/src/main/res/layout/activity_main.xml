@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/pies"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -26,8 +27,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Podaj Imie" />
+            android:hint="Podaj imię"
+            android:inputType="textPersonName" />
 
     </LinearLayout>
 
@@ -49,8 +50,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Podaj Nazwisko" />
+            android:hint="Podaj Nazwisko"
+            android:inputType="textPersonName" />
     </LinearLayout>
 
     <LinearLayout
@@ -71,21 +72,26 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number"
-            android:text="Podaj Liczbe Ocen" />
+            android:hint="Podaj Liczbe Ocen"
+            android:inputType="number" />
+
     </LinearLayout>
 
     <Button
         android:id="@+id/caculateActivityButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dalej" />
+        android:alpha="0.7"
+        android:background="#C5B5B5"
+        android:text="Dalej"
+        android:textAlignment="center" />
 
     <TextView
         android:id="@+id/avgGrade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#980DAF" />
 
 </LinearLayout>

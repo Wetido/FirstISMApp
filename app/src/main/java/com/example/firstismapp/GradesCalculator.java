@@ -44,12 +44,15 @@ public class GradesCalculator extends AppCompatActivity {
             TextView text = new TextView( GradesCalculator.this );
             text.setId(i + intGrades);
             text.setBackgroundColor(Color.rgb(70, 80, 90));
+            text.setAlpha( (float) 0.75 );
 
             SeekBar seekBar = new SeekBar(this);
             seekBar.setId(i);
             seekBar.setMax(6);
             seekBar.setProgress(0);
-            seekBar.setBackgroundColor(Color.rgb(65, 75, 85));
+            seekBar.setAlpha( (float) 0.75 );
+
+            seekBar.setBackgroundColor(Color.rgb(70, 80, 90));
 
             seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 

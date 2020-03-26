@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".GradesCalculator">
+    tools:context=".GradesCalculator"
+    android:background="@drawable/pies">
 
     <LinearLayout
         android:id="@+id/linearLayoutMain"
@@ -18,8 +19,8 @@
             android:id="@+id/welcome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:alpha="0.9"
-            android:background="#9A71E4"
+            android:alpha="0.8"
+            android:background="#DCCFAB"
             android:fontFamily="monospace"
             android:text="@string/mess"
             android:textAlignment="center"
